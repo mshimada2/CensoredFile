@@ -14,12 +14,32 @@ int main()
   //either case) from the file to the variable last
 
   in>>first;
+  in>>last;
 
 while(!in.eof())
 {
 
-in>>last;
+in>>first;
 
+if(first > 'A' && first > 'Z' && first > 'a' && first > 'z') 
+
+{
+
+first = current;
+
+}
+
+}
+
+while(!in.eof())
+{
+
+if(last > 'A' && last > 'Z' && last > 'a' && last > 'z')
+{
+
+last = current;
+
+}
 
 }
   //Then, finally, this displays the censored version:
