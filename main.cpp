@@ -15,9 +15,13 @@ int main()
 
   in>>first;
 
-while(in>>last);
+while(!in.eof())
+{
+
+in>>last;
 
 
+}
   //Then, finally, this displays the censored version:
   cout<<first<<"**"<<last<<endl;
 
