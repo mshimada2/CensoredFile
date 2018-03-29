@@ -1,4 +1,4 @@
-//Author:
+//Author: McDermott Liam Shimada 
 #include <iostream>
 #include <fstream>
 
@@ -13,6 +13,9 @@ int main()
   //lower case) should be assigned to first and the last letter (again in
   //either case) from the file to the variable last
 
+  in>>first;
+
+while(in>>last);
 
 
   //Then, finally, this displays the censored version:
