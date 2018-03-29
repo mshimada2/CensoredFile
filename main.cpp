@@ -13,35 +13,36 @@ int main()
   //lower case) should be assigned to first and the last letter (again in
   //either case) from the file to the variable last
 
-  in>>first;
-  in>>last;
 
 while(!in.eof())
 {
 
-in>>first;
+in>>current;
 
-if(first > 'A' && first > 'Z' && first > 'a' && first > 'z') 
+if(current >= 'A' && current <= 'Z' || current >= 'a' && current <= 'z') 
 
 {
+    
+    if(first == ' ')
+    {
 
-first = current;
+    first = current;
+    
+    }
+    
+    else
+    {
+    
+    last = current; 
+
+    }
+
+}
+
 
 }
 
-}
 
-while(!in.eof())
-{
-
-if(last > 'A' && last > 'Z' && last > 'a' && last > 'z')
-{
-
-last = current;
-
-}
-
-}
   //Then, finally, this displays the censored version:
   cout<<first<<"**"<<last<<endl;
 
